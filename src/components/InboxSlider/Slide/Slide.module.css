@@ -1,43 +1,43 @@
 .Slide {
 	font-size: 18px;
 	line-height: 24px;
-    position: relative;
-    padding-top: 40px;
-    box-sizing: border-box;
-    height: 100%;
+	position: relative;
+	padding-top: 40px;
+	box-sizing: border-box;
+	height: 100%;
 }
 
 .Slide button {
 	background: #3A68C0;
-    color: #fff;
-    line-height: 1.125;
-    border-radius: 100px;
-    padding: .625em 2.1875em 0.65em;
-    cursor: pointer;
-    border: 1px solid #3A68C0;
-    transition: all 0.15s;	
-    outline: none;
-    position: absolute;
-    bottom: 0;
+	color: #fff;
+	line-height: 1.125;
+	border-radius: 100px;
+	padding: .625em 2.1875em 0.65em;
+	cursor: pointer;
+	border: 1px solid #3A68C0;
+	transition: all 0.15s;	
+	outline: none;
+	position: absolute;
+	bottom: 0;
 }
 
 .Slide button:hover {
-    background: #4973c4;
+	background: #4973c4;
 }
 
 .Slide .Message {
-    font-size: 18px;
-    line-height: 24px;
+	font-size: 18px;
+	line-height: 24px;
 }
 
 .Slide .Date,
 .Slide .Pager {
-    position: absolute;
-    top: 0;
-    color: #757171;
-    font-size: 14px;
+	position: absolute;
+	top: 0;
+	color: #757171;
+	font-size: 14px;
 }
 
 .Slide .Date {
-    right: 0;    
+	right: 0;    
 }

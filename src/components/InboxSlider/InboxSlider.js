@@ -37,14 +37,10 @@ class InboxSlider extends React.Component {
 			slidesToScroll: 1
 		};
 
-		let loansToShow = <h3>No messages today</h3>
-
-		if(this.state.error) {
-			loansToShow = <h3>{this.state.error}</h3>
-		}
+		let loansToShow = this.state.error ? <h3>{this.state.error}</h3> : <h3>Loading messages...</h3>
 
 		if(this.state.loans) {
-			loansToShow = 
+			loansToShow = this.state.loans.length === 0 ? <h3>No messages today</h3> :
 				<Slider {...settings}>
 					{ this.state.loans.map((loan, i) => (
 						<Slide key={i} 
