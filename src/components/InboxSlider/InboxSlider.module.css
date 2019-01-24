@@ -1,0 +1,16 @@
+.InboxSlider {
+	width: 400px;
+	height: 400px;
+	background: #faf0f0;	
+	padding: 40px 40px;
+	box-sizing: border-box;
+}
+
+.InboxSlider h2 {
+	margin: 0;
+}
+
+.InboxSlider .Slides {
+	margin-top: 50px;
+	height: calc(100% - 78px);	
+}
