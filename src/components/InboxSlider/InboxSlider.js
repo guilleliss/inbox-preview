@@ -28,20 +28,11 @@ class InboxSlider extends React.Component {
 	}
 
 	render() {
-		const settings = {
-			arrows: true,
-			infinite: false,
-			dots: false,
-			speed: 500,
-			slidesToShow: 1,
-			slidesToScroll: 1
-		};
-
 		let loansToShow = this.state.error ? <h3>{this.state.error}</h3> : <h3>Loading messages...</h3>
 
 		if(this.state.loans) {
 			loansToShow = this.state.loans.length === 0 ? <h3>No messages today</h3> :
-				<Slider {...settings}>
+				<Slider {...this.props.settings}>
 					{ this.state.loans.map((loan, i) => (
 						<Slide key={i} 
 						slideNum={i+1}
@@ -65,5 +56,16 @@ class InboxSlider extends React.Component {
 		)
 	}
 } 
+
+InboxSlider.defaultProps = {
+	settings: {
+		arrows: true,
+		infinite: false,
+		dots: false,
+		speed: 500,
+		slidesToShow: 1,
+		slidesToScroll: 1
+	}
+}
 
 export default InboxSlider
